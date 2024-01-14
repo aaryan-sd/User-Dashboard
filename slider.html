@@ -1,0 +1,50 @@
+<!-- slider.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        /* Add some styles to make it visually appealing */
+        .slider-container {
+            
+            margin: 20px;
+            
+            
+        }
+        @media (max-width:500px) {
+            .slider-container input{
+                width: 230px;
+            }
+        }
+        
+        .slider-container input{
+            height: 4px;
+            width: 110px;
+        }
+        body{
+            margin-top: -10px;
+            margin-left: -20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="slider-container">
+        <input type="range" min="0" max="100" value="50" class="slider" >
+    </div>
+
+    <script>
+        // You can add JavaScript to handle slider value changes if needed
+        document.addEventListener("DOMContentLoaded", function() {
+            var sliders = document.querySelectorAll(".slider");
+            sliders.forEach(function(slider) {
+                slider.addEventListener("input", function() {
+                    console.log("Slider value: " + this.value);
+                });
+            });
+        });
+    </script>
+
+</body>
+</html>

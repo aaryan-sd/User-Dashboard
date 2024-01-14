@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Dashboard RapidQuest</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        
+        <!-- Sidebar Section -->
+        <aside>
+            <div class="logobutterfly">
+                <img src="butterflylogo2.png" alt="Profile Image" class="profile-img" ">
+            </div>
+            <br>
+
+            <div class="sidebar">
+                <a href="#">
+                    <span class="material-symbols-outlined" style="padding-bottom: 130px; padding-top: 35px;"> 
+                        search
+                    </span>
+
+                </a>
+                <a href="#" class="active">
+                    <span class="material-symbols-outlined">
+                        home
+                    </span>
+
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        receipt_long
+                    </span>
+
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        list_alt
+                    </span>
+
+                </a>
+                <a href="#">
+                    <span class="material-symbols-outlined">
+                        person
+                    </span>
+                </a>
+                
+                <a href="#">
+                    <span class="material-symbols-outlined" style="padding-top: 530px;">
+                        notifications_unread
+                    </span>
+
+                </a>
+                
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        logout
+                    </span>
+
+                </a>
+            </div>
+        </aside>
+        <!-- End of Sidebar Section -->
+
+        <!-- Main Content -->
+        <main>
+            
+            <div class="analyse">
+
+                <div class="sales" style="background-color: #f5f5f5;"> <!--First Section-->
+
+                    <div class="status"> 
+                        <div class="profile-img-section">
+                            <div class="profile-img" style="width: 70px; height: 70px; border-radius: 50%; "><img src="himike.jpg" alt="Profile Image" class="profile-img" style="border-radius: 50%; margin-left: 20px;"></div>
+                            <div class="hi-mike">
+                                <h1>Hi Mike,</h1>
+                                <h5>Welcome back</h5>
+                                <br>
+                                <br>
+                            </div>
+                        </div>
+                           
+                    </div>
+
+                    <div class="first-box">
+                        <div class="mobile-view-today-box">
+                            <div class="account-balance">
+                                <h4>Today</h4>
+                                <h1>$19,892</h1>
+                                <p>Account Balance</p>
+                              </div>
+                              <br>
+        
+                              <div class="dollar-info">
+                                <div class="year-to-date">
+                                  <h2>$4000</h2>
+                                  <p>Year-to-Date</p>
+                                </div>
+                                <div class="total-interest">
+                                  <h2>$1,892</h2>
+                                  <p>Total Interest</p>
+                                </div>
+                              </div>
+                              <br>
+                              <div class="button-iwantto">
+                                <button class="btn-iwantto">I want to...</button>
+                              </div>
+                        </div>
+                      
+                      <br>
+                      <br>
+
+                      <div class="recent-transactions">
+                        <h4>Recent Transactions</h4>
+                        <br>
+                        <p>2020-08-07</p>
+                        <h5>Withdrawal Transfer to Bank-XXX11</h5>
+                        <br>
+                        <hr>
+                        <br>
+                        <p>2020-07-21</p>
+                        <h5>Withdrawal Transfer to Bank-XXX11</h5>
+                        <br>
+                        <hr>
+                        <br>
+                        <p>2020-07-16</p>
+                        <h5>Withdrawal Transfer to Bank-XXX11</h5>
+                        <br>
+                      </div>
+
+                    </div>
+                </div>
+
+                <div class="visits">  <!--Second Section-->
+                    <div class="status">
+                        <div class="retirement-income">
+                            <h4 style="color: blue;">Retirement Income</h4>
+                            <h2>Starting Year 2056</h2>
+                        </div>
+                        <br>
+                        <div class="three-blocks">
+                          
+                            <div class="my-goal">
+                              <h2>$300,000</h2>
+                              <p>My Goal</p>
+                              <hr class="horizontal-line">
+                            </div>
+                            <div class="goal-monthly-section">
+                                <div class="goal-achieved">
+                                    <h2>59%</h2>
+                                    <p>Goal Achieved</p>
+                                    <hr class="horizontal-line">
+                                  </div>
+                                  <div class="monthly-income">
+                                    <h2>$300</h2>
+                                    <p>Estimated Monthly Income</p>
+                                    <hr class="horizontal-line">
+                                  </div>
+                            </div>
+                            
+                        
+                        </div>
+                        <br>
+                        <br>
+                        <div class="contributions-overtime"><h3>Contributions Overtime</h3></div>
+                        <canvas id="myChart" width="450" height="200" class="bar-graph"></canvas>
+  <script src="customChart.js"></script>
+                        <br>
+                        <br>
+                        <br>
+
+                        <div>
+                            <div class="howdoicompare">
+                                <h3>How do I compare my peers?</h3>
+                                <p style="padding-left: 8px;">These numbers represent current goal achievement</p>
+                            </div>
+                            <div class="stats-progress-circle-box">
+                                <div class="age-salary-gender">
+                                    <div class="age-dropdown">
+                                        <h4>Age: </h4>
+                                        <select id="dropdown" style="background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); padding: 1px; border-radius: 10px; padding-left: 20px; padding-right: 20px;">
+                                            <option value="option1">Under 30</option>
+                                            <option value="option2">Under 40</option>
+                                            <option value="option3">Under 50</option>
+                                        </select>
+                                    </div>
+                                    
+                                    <br>
+                                    <div class="salary-dropdown">
+                                        <h4>Salary: </h4>
+                                        <select id="dropdown" style="background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); padding: 1px; border-radius: 10px; padding-left: 20px; padding-right: 20px;">
+                                            <option value="option1">K20-K30</option>
+                                            <option value="option2">K30-K40</option>
+                                            <option value="option3">K40-K50</option>
+                                        </select>
+                                    </div>
+                                    
+                                    <br>
+                                    <div class="gender-dropdown">
+                                        <h4>Gender: </h4>
+                                        <select id="dropdown" style="background-color: rgb(255, 255, 255); color: rgb(0, 0, 0); padding: 1px; border-radius: 10px; padding-left: 20px; padding-right: 20px;">
+                                            <option value="option1">Male</option>
+                                            <option value="option2">Female</option>
+                                            
+                                        </select>
+                                    </div>
+                                    
+                                   
+                                    
+                                </div>
+                                <div class="percentage-circle-box">
+                                    <div class="circontainer">
+                                        <div class="circular-progress">
+                                            <div class="value-container">78%</div>
+                                        </div>
+                                        <script src="progressCircle.js"></script>
+                                    <script>updateProgressBar(78);</script>
+                                    <h5>Average</h5>
+                                    </div>
+                                    
+
+                                    <div class="circontainer2">
+                                        <div class="circular-progress2">
+                                            <div class="value-container2">95%</div>
+                                        </div>
+                                        <script src="progressCircle.js"></script>
+                                    <script>updateProgressBarB(95);</script>
+                                    <h5>Top</h5>
+                                    </div>
+                                    
+
+                                    <div class="circontainer3">
+                                        <div class="circular-progress3">
+                                            <div class="value-container3">59%</div>
+                                        </div>
+                                        <script src="progressCircle.js"></script>
+                                    <script>updateProgressBarC(59);</script>
+                                    <h5>Me</h5>
+                                    </div>
+                                    
+
+                                    
+
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                </div>
+                <div class="searches">  <!--Third column or section-->
+                    <div class="status">
+                        <div class="info">
+                            <div class="retirement-rounded-box">
+                                    <h3>Retirement Strategy</h3>
+                                <br>
+                                <br>
+                                <h4>Employee Contribution</h4>
+                                <div class="emp-contri">
+                                    <iframe src="slider.html" frameborder="0" width="55%" height="70px"></iframe>
+                                    <h4 style="margin-top: 10px; margin-left: 0px;">12%</h4>
+                                </div>
+                                <h4>Retirement Age</h4>
+                                <div class="emp-contri">
+                                    <iframe src="slider.html" frameborder="0" width="55%" height="70px"></iframe>
+                                    <h4 style="margin-top: 10px; margin-left: 0px;">65</h4>
+                                </div>
+                                <hr>
+                                <br>
+                                <div class="emp-contri-int-rate-update"> <!--Sliders-->
+                                    <div style="display: flex;">
+                                        <h4>Employer Contribution:</h4>
+                                        <h4 style="padding-left: 35px;">8.4%</h4>
+                                    </div>
+                                    <br>
+                                    <div style="display: flex;">
+                                        <h4>Interest Rate:</h4>
+                                        <h4 style="padding-left: 108px;">5%</h4>
+                                    </div>
+                                    <br>
+                                    <br>
+                                    <button class="update-button">Update</button>
+                                    <br>
+                                    <br>
+                                    <a href="#" target="_blank" style="color: blue; padding-left: 60px;">View Help Docs ></a>
+                                </div>
+                                <br>
+                                <br>
+                            </div>
+                        
+                            
+                        </div>
+                        <div class="last-block">
+                            <h5>Are you considering a</h5>
+                            <h4>Housing Advance?</h4>
+                            <p>Limited time reduced interest.</p>
+                            <a href="#" target="_blank" style="color: blue; ">Learn more ></a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <!-- End of Analyses -->
+
+            <nav class="mobile-navbar">
+                <a href="#" class="active">
+                    <span class="material-symbols-outlined">
+                        home
+                    </span>
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        receipt_long
+                    </span>
+
+                </a>
+                <a href="#">
+                    <span class="material-icons-sharp">
+                        list_alt
+                    </span>
+
+                </a>
+                <a href="#">
+                    <span class="material-symbols-outlined">
+                        person
+                    </span>
+                </a>
+                <a href="#">
+                    <span class="material-symbols-outlined"> 
+                        search
+                    </span>
+
+                </a>
+        
+            </nav>
+
+
+        </main>
+        
+
+    </div>
+
+</body>
+
+</html>
